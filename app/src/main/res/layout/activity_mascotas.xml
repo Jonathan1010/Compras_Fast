@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F7AF3A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.mascota">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="COMPRAS FAST"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="45dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_mascotas"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/seleccionR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar una veterinaria canina"
+        android:completionThreshold="1"
+        android:completionHint="Seleccione una veterinaria "
+        ></AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/selc_menu"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:completionHint="Seleccione un producto"
+        android:completionThreshold="1"
+        android:hint="Seleccione producto"></AutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:layout_margin="20dp"></EditText>
+
+    <Button
+        android:id="@+id/btnpagar"
+        android:layout_width="161dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#BA7F44"
+        android:textColor="#000000"
+        android:text="@string/nombre_pagar"/>
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="161dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#BA7F44"
+        android:textColor="#000000"
+        android:text="@string/nombre_regresar" />
+
+</LinearLayout>

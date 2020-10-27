@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pedidoss">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconocarrito"
+        android:roundIcon="@mipmap/iconocarrito"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".controlador.salirtodo"/>
+        <activity android:name=".controlador.Restaurante" />
+        <activity android:name=".controlador.bebidas"/>
+        <activity android:name=".controlador.otros"/>
+        <activity android:name=".controlador.regalo"/>
+        <activity android:name=".controlador.tecnologia"/>
+        <activity android:name=".controlador.tienda"/>
+        <activity android:name=".controlador.deporte"/>
+        <activity android:name=".controlador.farmacia"/>
+        <activity android:name=".controlador.mascota"/>
+        <activity android:name=".controlador.menuC" />
+        <activity android:name=".controlador.Login" />
+        <activity android:name=".controlador.Registrar" />
+        <activity android:name=".controlador.Activity_Huella" />
+        <activity android:name=".controlador.mapa" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

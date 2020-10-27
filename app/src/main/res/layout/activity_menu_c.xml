@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7AF3A"
+    android:orientation="vertical"
+    tools:context=".controlador.menuC">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Bienvenido"
+        android:textColor="#000000"
+        android:padding="20dp"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Qué necesitas?"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imagerestaurant"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FF5722"
+                android:src="@drawable/ic_restaurante" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESTAURANTE"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgfarmacia"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#4CAF50"
+                android:src="@drawable/ic_farmacias" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FARMACIAS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbebida"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#00BCD4"
+                android:src="@drawable/ic_licor"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BEBIDAS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgdeporte"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#4CAF50"
+                android:src="@drawable/ic_deportes" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEPORTES"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgtienda"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#00BCD4"
+                android:src="@drawable/ic_tiendas"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIENDAS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgregalo"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FF5722"
+                android:src="@drawable/ic_caja_de_regalo"
+              />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGALOS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgtecnologia"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#00BCD4"
+                android:src="@drawable/ic_ordenador_portatil" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TECNOLOGIA"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgmascota"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#FF5722"
+                android:src="@drawable/ic_mascotas"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MASCOTAS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgotros"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#4CAF50"
+                android:src="@drawable/ic_otros"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTROS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp">
+
+            </TextView>
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/salirMenu"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        android:text="Cancelar"
+        android:background="#BA7F44"
+        android:textColor="#000000"
+        />
+</LinearLayout>
