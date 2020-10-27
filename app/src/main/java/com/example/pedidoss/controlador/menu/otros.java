@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -61,7 +61,7 @@ public class otros extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent regresar= new Intent(otros.this,menuC.class);
+                Intent regresar= new Intent(otros.this, menuC.class);
                 startActivity(regresar);
             }
         });

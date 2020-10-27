@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.mapa;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -24,6 +24,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.example.pedidoss.R;
+import com.example.pedidoss.controlador.menu.menuC;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;

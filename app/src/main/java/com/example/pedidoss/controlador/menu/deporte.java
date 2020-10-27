@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,19 +15,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pedidoss.R;
 
-public class tecnologia extends AppCompatActivity {
+public class deporte extends AppCompatActivity {
     private EditText autotextlugar;
     private EditText autotextproducto;
     private EditText cantidad;
     private Button pagar,regresar;
 
     /// Aqui agregamos datos al autocomplement///
-    private static final String[] tecno = new String[]{
-            "MAster PC", "Kirios", "Abacons", "Tornner", "Sisconet"
+    private static final String[] DEPORTES = new String[]{
+            "La sotea", "Los Pinoss", "LA Canchita", "fORTIN", "El Recreo"
     };
 
-    private static final String[]tecnMENU = new String[]{
-            "Teclado", "Mouses", "Camara web","Disco solido", "Lapto"
+    private static final String[] DEPORTEMENU = new String[]{
+            "cesped verde", "cesped y camisetas", "Albitro y cancha"
     };
 
 
@@ -35,16 +35,16 @@ public class tecnologia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tecnologia);
+        setContentView(R.layout.activity_deportes);
         ///// Aqui le damos funcion a que muestre los datos alingresar cuna letra //
         AutoCompleteTextView restaurante = findViewById(R.id.seleccionR);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, tecno);
+                android.R.layout.simple_list_item_1, DEPORTES);
         restaurante.setAdapter(adapter);
 
         AutoCompleteTextView selec_menu = findViewById(R.id.selc_menu);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, tecnMENU);
+                android.R.layout.simple_list_item_1, DEPORTEMENU);
         selec_menu.setAdapter(adapter1);
 
 ////// Aqui estamos llamando los capos de texto para luego seruna validacion que este llenos para avilitar el boton pagar///
@@ -61,7 +61,7 @@ public class tecnologia extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent regresar= new Intent(tecnologia.this, menuC.class);
+                Intent regresar= new Intent(deporte.this, menuC.class);
                 startActivity(regresar);
             }
         });
@@ -73,7 +73,7 @@ public class tecnologia extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"La compra se realizo Exitosamente",Toast.LENGTH_LONG).show();
-                Intent pagar= new Intent(tecnologia.this,salirtodo.class);
+                Intent pagar= new Intent(deporte.this, salirtodo.class);
                 startActivity(pagar);
 
             }
@@ -103,3 +103,5 @@ public class tecnologia extends AppCompatActivity {
     };
 
 }
+
+

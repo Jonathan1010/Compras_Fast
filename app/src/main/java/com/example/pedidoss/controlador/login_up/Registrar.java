@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.login_up;
 
 
 import android.content.Intent;
@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pedidoss.R;
+import com.example.pedidoss.controlador.huella.Activity_Huella;
+import com.example.pedidoss.controlador.mapa.mapa;
 import com.example.pedidoss.modelo.bd_usuario;
 import com.example.pedidoss.modelo.usuario;
 import com.google.android.gms.tasks.OnCompleteListener;

@@ -1,21 +1,22 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.huella;
 
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.TargetApi;
 import android.app.KeyguardManager;
 import android.content.Intent;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
-import android.security.keystore.KeyGenParameterSpec;;
-import android.security.keystore.KeyProperties;
-
 import android.os.Bundle;
+import android.security.keystore.KeyGenParameterSpec;
+import android.security.keystore.KeyProperties;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.pedidoss.R;
+import com.example.pedidoss.controlador.login_up.Registrar;
 
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
@@ -26,6 +27,8 @@ import java.security.cert.CertificateException;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
+
+;
 
 
 public class Activity_Huella extends AppCompatActivity implements View.OnClickListener {

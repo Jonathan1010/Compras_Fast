@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,19 +15,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pedidoss.R;
 
-public class mascota extends AppCompatActivity {
+public class regalo extends AppCompatActivity {
     private EditText autotextlugar;
     private EditText autotextproducto;
     private EditText cantidad;
     private Button pagar,regresar;
 
     /// Aqui agregamos datos al autocomplement///
-    private static final String[] MASCOTA = new String[]{
-            "La sotea", "Los Pinoss", "LA Canchita", "fORTIN", "El Recreo"
+    private static final String[] REGALO = new String[]{
+            "La Regalona", "Todo por 50", "FELIZ FIETSA", "LA SORPRESA"
     };
 
-    private static final String[] MASCOTAMENU = new String[]{
-            "cesped verde", "cesped y camisetas", "Albitro y cancha"
+    private static final String[] REGALOMENU = new String[]{
+            "REGALO SEXI", "Flores", "DULCES","Ropa"
     };
 
 
@@ -35,16 +35,17 @@ public class mascota extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mascotas);
+        setContentView(R.layout.activity_regalos);
         ///// Aqui le damos funcion a que muestre los datos alingresar cuna letra //
         AutoCompleteTextView restaurante = findViewById(R.id.seleccionR);
+        //aqui se crea una lista para llamar a la lista de nuestro activity.xml
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, MASCOTA);
+                android.R.layout.simple_list_item_1, REGALO);
         restaurante.setAdapter(adapter);
 
         AutoCompleteTextView selec_menu = findViewById(R.id.selc_menu);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,MASCOTAMENU);
+                android.R.layout.simple_list_item_1, REGALOMENU);
         selec_menu.setAdapter(adapter1);
 
 ////// Aqui estamos llamando los capos de texto para luego seruna validacion que este llenos para avilitar el boton pagar///
@@ -61,7 +62,7 @@ public class mascota extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent regresar= new Intent(mascota.this,menuC.class);
+                Intent regresar= new Intent(regalo.this, menuC.class);
                 startActivity(regresar);
             }
         });
@@ -73,9 +74,8 @@ public class mascota extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"La compra se realizo Exitosamente",Toast.LENGTH_LONG).show();
-                Intent pagar= new Intent(mascota.this, salirtodo.class);
+                Intent pagar= new Intent(regalo.this, salirtodo.class);
                 startActivity(pagar);
-
             }
         }));
 

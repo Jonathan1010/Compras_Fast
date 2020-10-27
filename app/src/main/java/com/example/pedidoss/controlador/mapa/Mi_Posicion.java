@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.mapa;
 
 import android.location.Location;
 import android.location.LocationListener;

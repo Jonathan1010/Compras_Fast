@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.menu;
 
 import android.content.Intent;
 import android.os.Bundle;

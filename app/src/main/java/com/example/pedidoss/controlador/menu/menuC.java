@@ -1,4 +1,4 @@
-package com.example.pedidoss.controlador;
+package com.example.pedidoss.controlador.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pedidoss.R;
+import com.example.pedidoss.controlador.mapa.mapa;
 
 public class menuC extends AppCompatActivity implements View.OnClickListener {
     ///aqui declaramos las imgbotones////
@@ -45,7 +46,7 @@ public class menuC extends AppCompatActivity implements View.OnClickListener {
         farmacia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.farmacia.class);
+                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.menu.farmacia.class);
                 startActivity(btrestaurant);
             }
         });
@@ -59,28 +60,28 @@ public class menuC extends AppCompatActivity implements View.OnClickListener {
         deporte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.deporte.class);
+                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.menu.deporte.class);
                 startActivity(btrestaurant);
             }
         });
         tienda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.tienda.class);
+                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.menu.tienda.class);
                 startActivity(btrestaurant);
             }
         });
         regalo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btrestaurant = new Intent(menuC.this, regalo.class);
+                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.menu.regalo.class);
                 startActivity(btrestaurant);
             }
         });
         tecnologia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.tecnologia.class);
+                Intent btrestaurant = new Intent(menuC.this, com.example.pedidoss.controlador.menu.tecnologia.class);
                 startActivity(btrestaurant);
             }
         });
