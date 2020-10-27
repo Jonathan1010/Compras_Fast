@@ -7,7 +7,7 @@
     android:background="#F7AF3A"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlador.bebidas">
+    tools:context=".controlador.menu.bebidas">
 
 
     <TextView

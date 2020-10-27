@@ -19,21 +19,21 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-        <activity android:name=".controlador.salirtodo"/>
-        <activity android:name=".controlador.Restaurante" />
-        <activity android:name=".controlador.bebidas"/>
-        <activity android:name=".controlador.otros"/>
-        <activity android:name=".controlador.regalo"/>
-        <activity android:name=".controlador.tecnologia"/>
-        <activity android:name=".controlador.tienda"/>
-        <activity android:name=".controlador.deporte"/>
-        <activity android:name=".controlador.farmacia"/>
-        <activity android:name=".controlador.mascota"/>
-        <activity android:name=".controlador.menuC" />
-        <activity android:name=".controlador.Login" />
-        <activity android:name=".controlador.Registrar" />
-        <activity android:name=".controlador.Activity_Huella" />
-        <activity android:name=".controlador.mapa" />
+        <activity android:name=".controlador.menu.salirtodo"/>
+        <activity android:name=".controlador.menu.Restaurante" />
+        <activity android:name=".controlador.menu.bebidas"/>
+        <activity android:name=".controlador.menu.otros"/>
+        <activity android:name=".controlador.menu.regalo"/>
+        <activity android:name=".controlador.menu.tecnologia"/>
+        <activity android:name=".controlador.menu.tienda"/>
+        <activity android:name=".controlador.menu.deporte"/>
+        <activity android:name=".controlador.menu.farmacia"/>
+        <activity android:name=".controlador.menu.mascota"/>
+        <activity android:name=".controlador.menu.menuC" />
+        <activity android:name=".controlador.login_up.Login" />
+        <activity android:name=".controlador.login_up.Registrar" />
+        <activity android:name=".controlador.huella.Activity_Huella" />
+        <activity android:name=".controlador.mapa.mapa" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

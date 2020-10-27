@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F7AF3A"
     android:orientation="vertical"
-    tools:context=".controlador.mapa">
+    tools:context=".controlador.mapa.mapa">
 
 
     <LinearLayout

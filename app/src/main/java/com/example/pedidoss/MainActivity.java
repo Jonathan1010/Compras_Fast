@@ -7,8 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.pedidoss.controlador.Login;
-import com.example.pedidoss.controlador.mapa;
+import com.example.pedidoss.controlador.login_up.Login;
+import com.example.pedidoss.controlador.mapa.mapa;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
